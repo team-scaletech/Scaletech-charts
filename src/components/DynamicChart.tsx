@@ -101,7 +101,7 @@ const DynamicChart: FC<ChartProps> = ({
 
     const generateDatasets = () => {
         if (!data || data.length === 0) {
-            return []; // Handle empty data gracefully
+            return [];
         }
 
         if (currentChartType === "scatter" || currentChartType === "bubble") {
