@@ -7,7 +7,7 @@ import DynamicChart from "./components/DynamicChart";
 export interface MapData {
     value: any;
     id: string;
-    dataKey: string;
+    dataKey: string | number;
     labelKey: string;
     XaxisData: number;
     YaxisData: number;
@@ -32,7 +32,6 @@ const Charts: FC<ChartsContainerProps> = ({
     fontSize,
     fontStyle,
     fontWeight,
-    IsLabels,
     labelsFontSize,
     labelsFontFamily,
     labelsFontWeight,
@@ -40,7 +39,9 @@ const Charts: FC<ChartsContainerProps> = ({
     labelsFontStyle,
     class: customClass,
     style,
-    chartOnClickAction
+    chartOnClickAction,
+    IsSelection,
+    SelectionBoxLable
 }) => {
     const [chartValue, setChartValue] = useState<MapData[]>([]);
     useEffect(() => {
@@ -75,7 +76,6 @@ const Charts: FC<ChartsContainerProps> = ({
                 fontWeight: parseFloat(fontWeight as any)
             }}
             labelStyle={{
-                IsLabels,
                 labelsFontSize: parseFloat(labelsFontSize as any),
                 labelsFontFamily,
                 labelsFontWeight: parseFloat(labelsFontWeight as any),
@@ -86,6 +86,8 @@ const Charts: FC<ChartsContainerProps> = ({
             style={style}
             chartOnClickAction={chartOnClickAction}
             objectsDatasource={objectsDatasource}
+            IsSelection={IsSelection}
+            SelectionBoxLable={SelectionBoxLable}
         />
     );
 };

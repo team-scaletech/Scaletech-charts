@@ -23,12 +23,8 @@ export interface ChartsContainerProps {
     labelKey: ListAttributeValue<Big | string>;
     myToolTip: ListExpressionValue<string>;
     hoverEffectColor: string;
-    IsLabels: boolean;
-    labelsFontColor: string;
-    labelsFontFamily: string;
-    labelsFontSize: Big;
-    labelsFontStyle: string;
-    labelsFontWeight: Big;
+    IsSelection: boolean;
+    SelectionBoxLable: string;
     IsTitle: boolean;
     chartTitle: string;
     fontColor: string;
@@ -36,6 +32,11 @@ export interface ChartsContainerProps {
     fontSize: Big;
     fontStyle: string;
     fontWeight: Big;
+    labelsFontColor: string;
+    labelsFontFamily: string;
+    labelsFontSize: Big;
+    labelsFontStyle: string;
+    labelsFontWeight: Big;
     chartOnClickAction?: ListActionValue;
 }
 
@@ -58,12 +59,8 @@ export interface ChartsPreviewProps {
     labelKey: string;
     myToolTip: string;
     hoverEffectColor: string;
-    IsLabels: boolean;
-    labelsFontColor: string;
-    labelsFontFamily: string;
-    labelsFontSize: number | null;
-    labelsFontStyle: string;
-    labelsFontWeight: number | null;
+    IsSelection: boolean;
+    SelectionBoxLable: string;
     IsTitle: boolean;
     chartTitle: string;
     fontColor: string;
@@ -71,5 +68,10 @@ export interface ChartsPreviewProps {
     fontSize: number | null;
     fontStyle: string;
     fontWeight: number | null;
+    labelsFontColor: string;
+    labelsFontFamily: string;
+    labelsFontSize: number | null;
+    labelsFontStyle: string;
+    labelsFontWeight: number | null;
     chartOnClickAction: {} | null;
 }

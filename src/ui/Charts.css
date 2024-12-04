@@ -25,3 +25,17 @@ Place your custom CSS here
     font-size: 18px;
     color: #6c7180;
 }
+.chart-type-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+.chart-lable-text {
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.chart-type-selection {
+    padding: 5px;
+}
