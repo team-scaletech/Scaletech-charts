@@ -22,9 +22,14 @@ export interface ChartsContainerProps {
     dataKey: ListAttributeValue<Big | string>;
     labelKey: ListAttributeValue<Big | string>;
     myToolTip: ListExpressionValue<string>;
-    hoverEffectColor: string;
     IsSelection: boolean;
     SelectionBoxLable: string;
+    chartOnClickAction?: ListActionValue;
+    Width: number;
+    Height: number;
+    hoverEffectColor: string;
+    BorderWidth: number;
+    borderColor: string;
     IsTitle: boolean;
     chartTitle: string;
     fontColor: string;
@@ -32,12 +37,17 @@ export interface ChartsContainerProps {
     fontSize: Big;
     fontStyle: string;
     fontWeight: Big;
+    XaxisLineColor: string;
+    YaxisLineColor: string;
+    XaxisBorderWidth: Big;
+    YaxisBorderWidth: Big;
     labelsFontColor: string;
     labelsFontFamily: string;
     labelsFontSize: Big;
     labelsFontStyle: string;
     labelsFontWeight: Big;
-    chartOnClickAction?: ListActionValue;
+    pointBorderColor: string;
+    pointBackgroundColor: string;
 }
 
 export interface ChartsPreviewProps {
@@ -58,9 +68,14 @@ export interface ChartsPreviewProps {
     dataKey: string;
     labelKey: string;
     myToolTip: string;
-    hoverEffectColor: string;
     IsSelection: boolean;
     SelectionBoxLable: string;
+    chartOnClickAction: {} | null;
+    Width: number | null;
+    Height: number | null;
+    hoverEffectColor: string;
+    BorderWidth: number | null;
+    borderColor: string;
     IsTitle: boolean;
     chartTitle: string;
     fontColor: string;
@@ -68,10 +83,15 @@ export interface ChartsPreviewProps {
     fontSize: number | null;
     fontStyle: string;
     fontWeight: number | null;
+    XaxisLineColor: string;
+    YaxisLineColor: string;
+    XaxisBorderWidth: number | null;
+    YaxisBorderWidth: number | null;
     labelsFontColor: string;
     labelsFontFamily: string;
     labelsFontSize: number | null;
     labelsFontStyle: string;
     labelsFontWeight: number | null;
-    chartOnClickAction: {} | null;
+    pointBorderColor: string;
+    pointBackgroundColor: string;
 }

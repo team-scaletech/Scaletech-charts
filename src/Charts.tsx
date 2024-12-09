@@ -32,6 +32,10 @@ const Charts: FC<ChartsContainerProps> = ({
     fontSize,
     fontStyle,
     fontWeight,
+    XaxisLineColor,
+    XaxisBorderWidth,
+    YaxisLineColor,
+    YaxisBorderWidth,
     labelsFontSize,
     labelsFontFamily,
     labelsFontWeight,
@@ -39,9 +43,15 @@ const Charts: FC<ChartsContainerProps> = ({
     labelsFontStyle,
     class: customClass,
     style,
+    Height,
+    Width,
     chartOnClickAction,
     IsSelection,
-    SelectionBoxLable
+    SelectionBoxLable,
+    BorderWidth,
+    pointBackgroundColor,
+    pointBorderColor,
+    borderColor
 }) => {
     const [chartValue, setChartValue] = useState<MapData[]>([]);
     useEffect(() => {
@@ -65,7 +75,6 @@ const Charts: FC<ChartsContainerProps> = ({
         <DynamicChart
             chartType={ChartType}
             chartValue={chartValue}
-            hoverEffectColor={hoverEffectColor}
             ChartTitleStyle={{
                 chartTitle,
                 IsTitle,
@@ -80,10 +89,22 @@ const Charts: FC<ChartsContainerProps> = ({
                 labelsFontFamily,
                 labelsFontWeight: parseFloat(labelsFontWeight as any),
                 labelsFontColor,
-                labelsFontStyle
+                labelsFontStyle,
+                XaxisLineColor,
+                XaxisBorderWidth: parseFloat(XaxisBorderWidth as any),
+                YaxisLineColor,
+                YaxisBorderWidth: parseFloat(YaxisBorderWidth as any)
             }}
-            className={customClass || ""}
-            style={style}
+            otherStyle={{
+                hoverEffectColor: hoverEffectColor,
+                BorderWidth: BorderWidth,
+                borderColor: borderColor
+            }}
+            LSBChartStyle={{
+                pointBackgroundColor: pointBackgroundColor,
+                pointBorderColor: pointBorderColor
+            }}
+            chartStyle={{ className: customClass, style: style, width: Width, height: Height }}
             chartOnClickAction={chartOnClickAction}
             objectsDatasource={objectsDatasource}
             IsSelection={IsSelection}

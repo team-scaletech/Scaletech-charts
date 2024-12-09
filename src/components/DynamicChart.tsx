@@ -1,78 +1,20 @@
-import { createElement, CSSProperties, FC, useEffect, useState } from "react";
+import { createElement, FC, useEffect, useState } from "react";
 import { Chart as ChartJS, registerables } from "chart.js";
 import { Chart } from "react-chartjs-2";
-import { ListActionValue, ListValue } from "mendix";
 import { MapData } from "src/Charts";
+import { ChartProps } from "src/interface/ChartInterface";
+import { colors, defaultChartTitleStyle, defaultLabelStyle, defaultLSBChartStyle } from "src/utils/constants";
 
 ChartJS.register(...registerables);
-
-interface LabelStyleProps {
-    labelsFontSize?: number;
-    labelsFontFamily?: string;
-    labelsFontWeight?: number;
-    labelsFontColor?: string;
-    labelsFontStyle?: string;
-}
-
-interface ChartTitleProps {
-    chartTitle?: string;
-    IsTitle?: boolean;
-    fontFamily?: string;
-    fontColor?: string;
-    fontSize?: number;
-    fontStyle?: string;
-    fontWeight?: number;
-}
-
-interface ChartProps {
-    chartType?: "bar" | "line" | "pie" | "doughnut" | "polarArea" | "radar" | "scatter" | "bubble";
-    chartValue?: MapData[];
-    hoverEffectColor?: string;
-    ChartTitleStyle?: ChartTitleProps;
-    labelStyle?: LabelStyleProps;
-    className?: string;
-    style?: CSSProperties;
-    chartOnClickAction?: ListActionValue;
-    objectsDatasource?: ListValue;
-    IsSelection?: boolean;
-    SelectionBoxLable?: string;
-}
-
-const colors = [
-    "rgba(59, 147, 165, 0.8)",
-    "rgba(247, 184, 68, 0.6)",
-    "rgba(173, 216, 199, 0.7)",
-    "rgba(236, 60, 101, 0.5)",
-    "rgba(205, 215, 182, 0.9)",
-    "rgba(193, 246, 102, 0.3)"
-];
-
-const defaultChartTitleStyle: ChartTitleProps = {
-    chartTitle: "Demo Chart",
-    IsTitle: false,
-    fontFamily: "Open Sans, sans-serif",
-    fontColor: "#000000",
-    fontSize: 16,
-    fontStyle: "normal",
-    fontWeight: 400
-};
-
-const defaultLabelStyle: LabelStyleProps = {
-    labelsFontFamily: "Open Sans, sans-serif",
-    labelsFontColor: "#000000",
-    labelsFontSize: 16,
-    labelsFontStyle: "normal",
-    labelsFontWeight: 600
-};
 
 const DynamicChart: FC<ChartProps> = ({
     chartType = "bar",
     chartValue,
-    hoverEffectColor,
     ChartTitleStyle,
     labelStyle,
-    className,
-    style,
+    chartStyle,
+    otherStyle,
+    LSBChartStyle,
     chartOnClickAction,
     objectsDatasource,
     IsSelection,
@@ -99,6 +41,12 @@ const DynamicChart: FC<ChartProps> = ({
             Object.entries(labelStyle || {}).filter(([_, value]) => value !== "" && value !== undefined)
         )
     };
+    const mergedLSBChartStyle = {
+        ...defaultLSBChartStyle,
+        ...Object.fromEntries(
+            Object.entries(LSBChartStyle || {}).filter(([_, value]) => value !== "" && value !== undefined)
+        )
+    };
 
     const generateDatasets = () => {
         if (!data || data.length === 0) {
@@ -111,9 +59,29 @@ const DynamicChart: FC<ChartProps> = ({
                     data: data.map(item => ({
                         x: item.XaxisData || 0,
                         y: item.YaxisData || 0,
-                        r: currentChartType === "bubble" && Number(item.bubbleRadius)
+                        r: currentChartType === "bubble" ? Number(item.bubbleRadius || 5) : undefined
                     })),
-                    hoverBackgroundColor: hoverEffectColor || "rgba(0, 0, 0, 0.2)"
+                    backgroundColor: colors,
+                    borderColor: otherStyle?.borderColor || colors[0],
+                    borderWidth: otherStyle?.BorderWidth,
+                    pointBackgroundColor: mergedLSBChartStyle?.pointBackgroundColor,
+                    pointBorderColor: mergedLSBChartStyle?.pointBorderColor,
+                    hoverBackgroundColor: otherStyle?.hoverEffectColor
+                }
+            ];
+        }
+
+        if (currentChartType === "line") {
+            return [
+                {
+                    data: data.map(item => item.dataKey || 0),
+                    borderColor: otherStyle?.borderColor || colors[0],
+                    borderWidth: otherStyle?.BorderWidth,
+                    tension: 0.4, // Curve for line chart
+                    pointBackgroundColor: mergedLSBChartStyle?.pointBackgroundColor,
+                    pointBorderColor: mergedLSBChartStyle?.pointBorderColor,
+                    pointRadius: 5,
+                    hoverBackgroundColor: otherStyle?.hoverEffectColor
                 }
             ];
         }
@@ -122,8 +90,9 @@ const DynamicChart: FC<ChartProps> = ({
             {
                 data: data.map(item => item.dataKey || 0),
                 backgroundColor: colors,
-                hoverBackgroundColor: Array(data.length).fill(hoverEffectColor || "rgba(0, 0, 0, 0.2)"),
-                borderWidth: 1
+                hoverBackgroundColor: Array(data.length).fill(otherStyle?.hoverEffectColor || "rgba(0, 0, 0, 0.2)"),
+                borderWidth: otherStyle?.BorderWidth,
+                borderColor: otherStyle?.borderColor || colors[0]
             }
         ];
     };
@@ -181,6 +150,10 @@ const DynamicChart: FC<ChartProps> = ({
                                   style: mergedChartLabelStyle.labelsFontStyle,
                                   weight: mergedChartLabelStyle.labelsFontWeight
                               }
+                          },
+                          grid: {
+                              color: mergedChartLabelStyle.XaxisLineColor, // Grid line color
+                              borderWidth: mergedChartLabelStyle.XaxisBorderWidth // Axis line thickness
                           }
                       },
                       y: {
@@ -192,6 +165,10 @@ const DynamicChart: FC<ChartProps> = ({
                                   style: mergedChartLabelStyle.labelsFontStyle,
                                   weight: mergedChartLabelStyle.labelsFontWeight
                               }
+                          },
+                          grid: {
+                              color: mergedChartLabelStyle.YaxisLineColor, // Grid line color
+                              borderWidth: mergedChartLabelStyle.YaxisBorderWidth // Axis line thickness
                           }
                       }
                   }
@@ -232,7 +209,7 @@ const DynamicChart: FC<ChartProps> = ({
     };
 
     return (
-        <div className={className} style={{ ...style, width: "900px", height: "600px" }}>
+        <div className={chartStyle?.className}>
             {IsSelection && (
                 <div className="chart-type-wrapper">
                     <h4 className="chart-lable-text">{SelectionBoxLable ? SelectionBoxLable : "Select Chart Type"}</h4>
@@ -252,7 +229,9 @@ const DynamicChart: FC<ChartProps> = ({
                     </select>
                 </div>
             )}
-            <Chart type={currentChartType} data={chartConfig.data as any} options={chartConfig.options as any} />
+            <div style={{ ...chartStyle?.style, width: chartStyle?.width, height: chartStyle?.height }}>
+                <Chart type={currentChartType} data={chartConfig.data as any} options={chartConfig.options as any} />
+            </div>
         </div>
     );
 };
