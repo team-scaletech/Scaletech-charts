@@ -22,13 +22,14 @@ export interface ChartsContainerProps {
     dataKey: ListAttributeValue<Big | string>;
     labelKey: ListAttributeValue<Big | string>;
     myToolTip: ListExpressionValue<string>;
+    IsSelection: boolean;
+    SelectionBoxLable: string;
+    chartOnClickAction?: ListActionValue;
+    Width: number;
+    Height: number;
     hoverEffectColor: string;
-    IsLabels: boolean;
-    labelsFontColor: string;
-    labelsFontFamily: string;
-    labelsFontSize: Big;
-    labelsFontStyle: string;
-    labelsFontWeight: Big;
+    BorderWidth: number;
+    borderColor: string;
     IsTitle: boolean;
     chartTitle: string;
     fontColor: string;
@@ -36,7 +37,17 @@ export interface ChartsContainerProps {
     fontSize: Big;
     fontStyle: string;
     fontWeight: Big;
-    chartOnClickAction?: ListActionValue;
+    XaxisLineColor: string;
+    YaxisLineColor: string;
+    XaxisBorderWidth: Big;
+    YaxisBorderWidth: Big;
+    labelsFontColor: string;
+    labelsFontFamily: string;
+    labelsFontSize: Big;
+    labelsFontStyle: string;
+    labelsFontWeight: Big;
+    pointBorderColor: string;
+    pointBackgroundColor: string;
 }
 
 export interface ChartsPreviewProps {
@@ -57,13 +68,14 @@ export interface ChartsPreviewProps {
     dataKey: string;
     labelKey: string;
     myToolTip: string;
+    IsSelection: boolean;
+    SelectionBoxLable: string;
+    chartOnClickAction: {} | null;
+    Width: number | null;
+    Height: number | null;
     hoverEffectColor: string;
-    IsLabels: boolean;
-    labelsFontColor: string;
-    labelsFontFamily: string;
-    labelsFontSize: number | null;
-    labelsFontStyle: string;
-    labelsFontWeight: number | null;
+    BorderWidth: number | null;
+    borderColor: string;
     IsTitle: boolean;
     chartTitle: string;
     fontColor: string;
@@ -71,5 +83,15 @@ export interface ChartsPreviewProps {
     fontSize: number | null;
     fontStyle: string;
     fontWeight: number | null;
-    chartOnClickAction: {} | null;
+    XaxisLineColor: string;
+    YaxisLineColor: string;
+    XaxisBorderWidth: number | null;
+    YaxisBorderWidth: number | null;
+    labelsFontColor: string;
+    labelsFontFamily: string;
+    labelsFontSize: number | null;
+    labelsFontStyle: string;
+    labelsFontWeight: number | null;
+    pointBorderColor: string;
+    pointBackgroundColor: string;
 }

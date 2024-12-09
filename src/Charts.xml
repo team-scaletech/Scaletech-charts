@@ -11,18 +11,20 @@
 >
     <name>Charts</name>
     <description>My widget description</description>
-    <icon />
+    <icon>
+        PHN2ZyB3aWR0aD0iNjU5IiBoZWlnaHQ9IjcwOSIgdmlld0JveD0iMCAwIDM1OSA0MDkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHg9IjIxLjY0ODQiIHk9IjE1Ny4yMzQiIHdpZHRoPSI5NS43MzI2IiBoZWlnaHQ9IjEwLjIxNzYiIHJ4PSI1LjEwODgiIHRyYW5zZm9ybT0icm90YXRlKC00NSAyMS42NDg0IDE1Ny4yMzQpIiBmaWxsPSIjMTYxRDFFIi8+CjxyZWN0IHg9IjEwMC4yODEiIHk9Ijc4LjU5NTciIHdpZHRoPSI2MS4wNzA4IiBoZWlnaHQ9IjEwLjIxNzYiIHJ4PSI1LjEwODgiIHRyYW5zZm9ybT0icm90YXRlKC00NSAxMDAuMjgxIDc4LjU5NTcpIiBmaWxsPSIjMTYxRDFFIi8+CjxyZWN0IHg9IjE1NC40MDYiIHk9IjI0LjQ3MjciIHdpZHRoPSIzNC42MTAyIiBoZWlnaHQ9IjEwLjIxNzYiIHJ4PSI1LjEwODgiIHRyYW5zZm9ybT0icm90YXRlKC00NSAxNTQuNDA2IDI0LjQ3MjcpIiBmaWxsPSIjMTYxRDFFIi8+CjxyZWN0IHdpZHRoPSI5NS43MzI2IiBoZWlnaHQ9IjEwLjIxNzYiIHJ4PSI1LjEwODgiIHRyYW5zZm9ybT0ibWF0cml4KC0wLjcwNzEwNyAwLjcwNzEwNyAwLjcwNzEwNyAwLjcwNzEwNyAzMjguOTMgMTUwLjA0NykiIGZpbGw9IiMxNjFEMUUiLz4KPHJlY3Qgd2lkdGg9IjYxLjA3MDgiIGhlaWdodD0iMTAuMjE3NiIgcng9IjUuMTA4OCIgdHJhbnNmb3JtPSJtYXRyaXgoLTAuNzA3MTA3IDAuNzA3MTA3IDAuNzA3MTA3IDAuNzA3MTA3IDIxNC44NzUgMjY0LjA5NikiIGZpbGw9IiMxNjFEMUUiLz4KPHJlY3Qgd2lkdGg9IjM0LjYxMDIiIGhlaWdodD0iMTAuMjE3NiIgcng9IjUuMTA4OCIgdHJhbnNmb3JtPSJtYXRyaXgoLTAuNzA3MTA3IDAuNzA3MTA3IDAuNzA3MTA3IDAuNzA3MTA3IDI1MC4yODkgMjI4LjY3OCkiIGZpbGw9IiMxNjFEMUUiLz4KPHJlY3QgeD0iNTkuMTY0MSIgeT0iMTk0Ljc0NCIgd2lkdGg9IjU2Ljg0MTIiIGhlaWdodD0iMTAuMjE3NiIgcng9IjUuMTA4OCIgdHJhbnNmb3JtPSJyb3RhdGUoLTQ1IDU5LjE2NDEgMTk0Ljc0NCkiIGZpbGw9IiMxNjFEMUUiLz4KPHJlY3QgeD0iMTA3LjQ4NCIgeT0iMTQ2LjQxNiIgd2lkdGg9IjkxLjg2NDEiIGhlaWdodD0iMTAuMjE3NiIgcng9IjUuMTA4OCIgdHJhbnNmb3JtPSJyb3RhdGUoLTQ1IDEwNy40ODQgMTQ2LjQxNikiIGZpbGw9IiMwMEE1Q0IiLz4KPHJlY3QgeD0iMTgwLjU3OCIgeT0iNzMuMzI4MSIgd2lkdGg9IjUwLjcwMzIiIGhlaWdodD0iMTAuMjE3NiIgcng9IjUuMTA4OCIgdHJhbnNmb3JtPSJyb3RhdGUoLTQ1IDE4MC41NzggNzMuMzI4MSkiIGZpbGw9IiMxNjFEMUUiLz4KPHJlY3QgeD0iNzcuOTE0MSIgeT0iMjEzLjUwNCIgd2lkdGg9IjM5LjMwNCIgaGVpZ2h0PSIxMC4yMTc2IiByeD0iNS4xMDg4IiB0cmFuc2Zvcm09InJvdGF0ZSgtNDUgNzcuOTE0MSAyMTMuNTA0KSIgZmlsbD0iIzE2MUQxRSIvPgo8cmVjdCB4PSIxMTQuMDk0IiB5PSIxNzcuMzE2IiB3aWR0aD0iNjEuMDE5MiIgaGVpZ2h0PSIxMC4yMTc2IiByeD0iNS4xMDg4IiB0cmFuc2Zvcm09InJvdGF0ZSgtNDUgMTE0LjA5NCAxNzcuMzE2KSIgZmlsbD0iIzAwQTVDQiIvPgo8cmVjdCB4PSIxNjcuNDkyIiB5PSIxMjMuOTI0IiB3aWR0aD0iOTUuNzMyNiIgaGVpZ2h0PSIxMC4yMTc2IiByeD0iNS4xMDg4IiB0cmFuc2Zvcm09InJvdGF0ZSgtNDUgMTY3LjQ5MiAxMjMuOTI0KSIgZmlsbD0iIzE2MUQxRSIvPgo8cmVjdCB3aWR0aD0iMzkuMzA0IiBoZWlnaHQ9IjEwLjIxNzYiIHJ4PSI1LjEwODgiIHRyYW5zZm9ybT0ibWF0cml4KC0wLjcwNzEwNyAwLjcwNzEwNyAwLjcwNzEwNyAwLjcwNzEwNyAyNzIuNjk1IDkzLjczODMpIiBmaWxsPSIjMTYxRDFFIi8+CjxyZWN0IHdpZHRoPSI2MS4wMTkyIiBoZWlnaHQ9IjEwLjIxNzYiIHJ4PSI1LjEwODgiIHRyYW5zZm9ybT0ibWF0cml4KC0wLjcwNzEwNyAwLjcwNzEwNyAwLjcwNzEwNyAwLjcwNzEwNyAyMzYuNTE2IDEyOS45MjQpIiBmaWxsPSIjMDBBNUNCIi8+CjxyZWN0IHdpZHRoPSI5NS43MzI2IiBoZWlnaHQ9IjEwLjIxNzYiIHJ4PSI1LjEwODgiIHRyYW5zZm9ybT0ibWF0cml4KC0wLjcwNzEwNyAwLjcwNzEwNyAwLjcwNzEwNyAwLjcwNzEwNyAxODMuMTE3IDE4My4zMTYpIiBmaWxsPSIjMTYxRDFFIi8+CjxyZWN0IHg9Ijk2LjY3MTkiIHk9IjIzMi4yNTgiIHdpZHRoPSI0OS44MjYzIiBoZWlnaHQ9IjEwLjIxNzYiIHJ4PSI1LjEwODgiIHRyYW5zZm9ybT0icm90YXRlKC00NSA5Ni42NzE5IDIzMi4yNTgpIiBmaWxsPSIjMTYxRDFFIi8+CjxyZWN0IHg9IjE0Mi41NTUiIHk9IjE4Ni4zNzMiIHdpZHRoPSI5MS43NjA5IiBoZWlnaHQ9IjEwLjIxNzYiIHJ4PSI1LjEwODgiIHRyYW5zZm9ybT0icm90YXRlKC00NSAxNDIuNTU1IDE4Ni4zNzMpIiBmaWxsPSIjMDBBNUNCIi8+CjxyZWN0IHg9IjIxOC43NDIiIHk9IjExMC4xODYiIHdpZHRoPSI0OS43NzQ4IiBoZWlnaHQ9IjEwLjIxNzYiIHJ4PSI1LjEwODgiIHRyYW5zZm9ybT0icm90YXRlKC00NSAyMTguNzQyIDExMC4xODYpIiBmaWxsPSIjMTYxRDFFIi8+CjxyZWN0IHdpZHRoPSI0OS44MjYzIiBoZWlnaHQ9IjEwLjIxNzYiIHJ4PSI1LjEwODgiIHRyYW5zZm9ybT0ibWF0cml4KC0wLjcwNzEwNyAwLjcwNzEwNyAwLjcwNzEwNyAwLjcwNzEwNyAyOTEuNDQ1IDExMi40OTYpIiBmaWxsPSIjMTYxRDFFIi8+CjxyZWN0IHdpZHRoPSI5MS43NjA5IiBoZWlnaHQ9IjEwLjIxNzYiIHJ4PSI1LjEwODgiIHRyYW5zZm9ybT0ibWF0cml4KC0wLjcwNzEwNyAwLjcwNzEwNyAwLjcwNzEwNyAwLjcwNzEwNyAyNDUuNTcgMTU4LjM4MSkiIGZpbGw9IiMwMEE1Q0IiLz4KPHJlY3Qgd2lkdGg9IjQ5Ljc3NDgiIGhlaWdodD0iMTAuMjE3NiIgcng9IjUuMTA4OCIgdHJhbnNmb3JtPSJtYXRyaXgoLTAuNzA3MTA3IDAuNzA3MTA3IDAuNzA3MTA3IDAuNzA3MTA3IDE2OS4zNzUgMjM0LjU3MikiIGZpbGw9IiMxNjFEMUUiLz4KPHJlY3QgeD0iNDAuNDA2MiIgeT0iMTc1Ljk4OCIgd2lkdGg9IjIyMi4zNjIiIGhlaWdodD0iMTAuMjE3NiIgcng9IjUuMTA4OCIgdHJhbnNmb3JtPSJyb3RhdGUoLTQ1IDQwLjQwNjIgMTc1Ljk4OCkiIGZpbGw9IiMxNjFEMUUiLz4KPHJlY3QgeD0iMTUyLjkzOCIgeT0iMjg4LjUyIiB3aWR0aD0iMjIyLjM2MiIgaGVpZ2h0PSIxMC4yMTc2IiByeD0iNS4xMDg4IiB0cmFuc2Zvcm09InJvdGF0ZSgtNDUgMTUyLjkzOCAyODguNTIpIiBmaWxsPSIjMTYxRDFFIi8+CjxwYXRoIGQ9Ik0yNy4wNDkxIDM2OC45NzNMMjMuMjI0IDM3MS45MzNDMjEuMzExNCAzNjkuMTU1IDE4LjUzMzcgMzY3Ljc0NCAxNC44OTA3IDM2Ny43NDRDMTIuNDMxNyAzNjcuNzQ0IDEwLjI0NTkgMzY4LjQyNyA4LjQyNDM5IDM2OS43NDdDNi42MDI5IDM3MS4wNjggNS42OTIxNiAzNzMuMDI2IDUuNjkyMTYgMzc1LjUzMUM1LjY5MjE2IDM3Ny42MjUgNi40NjYyOSAzNzkuMzU2IDcuOTY5MDIgMzgwLjYzMUM5LjQ3MTc1IDM4MS45MDYgMTEuMzM4OCAzODIuODYyIDEzLjQ3OSAzODMuNTQ1QzE1LjYxOTMgMzg0LjIyOCAxNy44MDUxIDM4NC45NTcgMTkuOTQ1MyAzODUuNzMxQzIyLjEzMTEgMzg2LjUwNSAyMy45NTI2IDM4Ny44MjYgMjUuNTAwOSAzODkuNjAyQzI3LjAwMzYgMzkxLjM3OCAyNy43Nzc3IDM5My43IDI3Ljc3NzcgMzk2LjUyM0MyNy43Nzc3IDQwMC4yNTcgMjYuMzIwNSA0MDMuMjYzIDIzLjQwNjIgNDA1LjU0QzIwLjQ5MTggNDA3LjgxNyAxNy4yMTMxIDQwOC45NTUgMTMuNTcwMSA0MDguOTU1QzcuNjUwMjYgNDA4Ljk1NSAzLjE0MjA3IDQwNi44MTUgMCA0MDIuNThMMy45NjE3NCAzOTkuNzExQzYuMDEwOTIgNDAzLjIxNyA5LjI0NDA2IDQwNC45NDggMTMuNzUyMyA0MDQuOTQ4QzE2LjEyMDIgNDA0Ljk0OCAxOC4yMTQ5IDQwNC4yMTkgMjAuMTI3NSA0MDIuODA3QzIyLjA0IDQwMS4zOTYgMjIuOTk2MyAzOTkuNDgzIDIyLjk5NjMgMzk3LjA3QzIyLjk5NjMgMzk1LjE1NyAyMi40NDk5IDM5My42MDkgMjEuMzU3IDM5Mi4zMzRDMjAuMjY0MSAzOTEuMTA0IDE4Ljg5OCAzOTAuMTk0IDE3LjI1ODYgMzg5LjY0N0MxNS42MTkzIDM4OS4xMDEgMTMuODQzMyAzODguNDYzIDExLjkzMDggMzg3Ljc4QzEwLjAxODIgMzg3LjA5NyA4LjI0MjI0IDM4Ni4zNjggNi42MDI5IDM4NS42NEM0Ljk2MzU2IDM4NC45MTEgMy42NDI5OCAzODMuNzI3IDIuNTA0NTUgMzgyLjA0MkMxLjUwMjczIDM4MC40OTQgMC45NTYyODIgMzc4LjQ0NSAwLjk1NjI4MiAzNzUuOTg2QzAuOTU2MjgyIDM3Mi4wNyAyLjMyMjQgMzY5LjAxOSA1LjA1NDY0IDM2Ni45MjRDNy43ODY4NyAzNjQuNzg0IDExLjA2NTYgMzYzLjczNiAxNC44OTA3IDM2My43MzZDMTkuOTQ1MyAzNjMuNzM2IDIzLjk5ODEgMzY1LjQ2NyAyNy4wNDkxIDM2OC45NzNaIiBmaWxsPSIjMDBBNUNCIi8+CjxwYXRoIGQ9Ik03MC45OTM2IDM5OC41MjdMNzQuNTkxIDQwMS4wNzdDNzMuMDg4MyA0MDMuMzk5IDcwLjkwMjUgNDA1LjI2NiA2OC4wNzkyIDQwNi43NjlDNjUuMjU1OSA0MDguMjcyIDYyLjExMzggNDA5LjAwMSA1OC42NTMgNDA5LjAwMUM1Mi4xODY3IDQwOS4wMDEgNDYuODU4OCA0MDYuODYgNDIuNTc4MyA0MDIuNThDMzguMjk3OCAzOTguMjk5IDM2LjIwMzEgMzkyLjg4IDM2LjIwMzEgMzg2LjM2OEMzNi4yMDMxIDM3OS44NTcgMzguMzQzNCAzNzQuNDM4IDQyLjU3ODMgMzcwLjE1N0M0Ni44MTMzIDM2NS44NzcgNTIuMTg2NyAzNjMuNzM2IDU4LjY1MyAzNjMuNzM2QzYxLjQ3NjMgMzYzLjczNiA2NC4yNTQxIDM2NC4yODMgNjYuODk1MiAzNjUuNDIxQzY5LjUzNjQgMzY2LjU2IDcxLjc2NzcgMzY4LjI0NSA3My41NDM3IDM3MC41MjFMNjkuNzE4NSAzNzMuMzlDNjguODA3OCAzNzEuOTMzIDY3LjMwNTEgMzcwLjYxMiA2NS4xNjQ4IDM2OS40NzRDNjMuMDI0NiAzNjguMzM2IDYwLjgzODggMzY3Ljc0NCA1OC42NTMgMzY3Ljc0NEM1My4yNzk2IDM2Ny43NDQgNDguOTk5MSAzNjkuNTY1IDQ1Ljc2NTkgMzczLjIwOEM0Mi41MzI4IDM3Ni44NTEgNDAuOTM5IDM4MS4yMjMgNDAuOTM5IDM4Ni4zNjhDNDAuOTM5IDM5MS41MTQgNDIuNTMyOCAzOTUuOTMxIDQ1Ljc2NTkgMzk5LjUyOUM0OC45OTkxIDQwMy4xNzIgNTMuMjc5NiA0MDQuOTkzIDU4LjY1MyA0MDQuOTkzQzY0LjA3MTkgNDA0Ljk5MyA2OC4xNzAzIDQwMi44NTMgNzAuOTkzNiAzOTguNTI3WiIgZmlsbD0iIzAwQTVDQiIvPgo8cGF0aCBkPSJNODguMzgyOSAzOTYuNjEzTDgzLjY0NzEgNDA3LjkwN0g3OC41NDY5TDk3LjMwODIgMzY0LjgyOEgxMDEuNTg5TDEyMC4yNTkgNDA3LjkwN0gxMTUuMTU5TDExMC40MjMgMzk2LjU2OEg4OC4zODI5VjM5Ni42MTNaTTk5LjQwMjkgMzY5LjkyOEw5MC4wMjIzIDM5Mi41NkgxMDguNjkzTDk5LjQwMjkgMzY5LjkyOFoiIGZpbGw9IiMwMEE1Q0IiLz4KPHBhdGggZD0iTTEzMi45MTggMzY0LjgyOFY0MDMuODk5SDE1M1Y0MDcuOTA3SDEyOC41NDdWMzY0LjgyOEgxMzIuOTE4WiIgZmlsbD0iIzAwQTVDQiIvPgo8cGF0aCBkPSJNMTY1LjggMzg3LjUwNlY0MDMuODU0SDE4OC44NDJWNDA3LjkwN0gxNjEuMzgzVjM2NC44MjhIMTg4LjExM1YzNjguODM1SDE2NS44VjM4My40OThIMTg2LjY1NlYzODcuNTA2SDE2NS44WiIgZmlsbD0iIzAwQTVDQiIvPgo8cGF0aCBkPSJNMjA2Ljc4NyA0MDcuOTA3VjM3My4yMDdIMTk0LjQ5MlYzNjQuODI4SDIyOC41NTRWMzczLjIwN0gyMTYuMjU5VjQwNy45MDdIMjA2Ljc4N1oiIGZpbGw9IiMxNjFEMUUiLz4KPHBhdGggZD0iTTIzNi4yMDMgNDA3LjkwN1YzNjQuODI4SDI2NS40ODRWMzczLjU3MUgyNDUuNzJWMzgxLjU4NkgyNjQuMzkxVjM5MC4zMjlIMjQ1LjcyVjM5OS4wNzJIMjY2LjU3NlY0MDcuOTA3SDIzNi4yMDNaIiBmaWxsPSIjMTYxRDFFIi8+CjxwYXRoIGQ9Ik0zMTIuMDY0IDM3MC4wNjZMMzA0Ljc3OCAzNzYuMDMxQzMwMi43NzUgMzczLjY2MyAzMDAuMDg4IDM3Mi41MjUgMjk2LjYyNyAzNzIuNTI1QzI5My4wMyAzNzIuNTI1IDI5MC4wMjQgMzczLjg0NiAyODcuNzAyIDM3Ni40NDFDMjg1LjMzNCAzNzkuMDM3IDI4NC4xOTUgMzgyLjM2MSAyODQuMTk1IDM4Ni4zNjhDMjg0LjE5NSAzOTAuMzMgMjg1LjM3OSAzOTMuNjU0IDI4Ny43MDIgMzk2LjI5NkMyOTAuMDI0IDM5OC45MzcgMjkyLjkzOSA0MDAuMjU3IDI5Ni4zNTQgNDAwLjI1N0MzMDAuMjI1IDQwMC4yNTcgMzAzLjE4NCAzOTguNzA5IDMwNS4yMzQgMzk1LjYxM0wzMTMuMTU3IDQwMS41MzJDMzExLjQyNyA0MDMuOTkxIDMwOS4xNSA0MDUuODU4IDMwNi4zNzIgNDA3LjEzM0MzMDMuNTk0IDQwOC40MDkgMzAwLjY4IDQwOS4wMDEgMjk3LjU4MyA0MDkuMDAxQzI5MC43NTMgNDA5LjAwMSAyODUuMTk3IDQwNi45NTEgMjgwLjg3MSA0MDIuODA3QzI3Ni41NDUgMzk4LjY2NCAyNzQuMzU5IDM5My4xOTkgMjc0LjM1OSAzODYuMzY4QzI3NC4zNTkgMzc5LjUzOCAyNzYuNTQ1IDM3NC4wNzMgMjgwLjg3MSAzNjkuOTI5QzI4NS4xMDYgMzY1Ljc4NiAyOTAuNzA3IDM2My43MzYgMjk3LjQ5MiAzNjMuNzM2QzMwMC4yMjUgMzYzLjczNiAzMDIuODY2IDM2NC4yMzcgMzA1LjUwNyAzNjUuMjM5QzMwOC4xOTQgMzY2LjI4NiAzMTAuMzM0IDM2Ny44OCAzMTIuMDY0IDM3MC4wNjZaIiBmaWxsPSIjMTYxRDFFIi8+CjxwYXRoIGQ9Ik0zMjAuNjcyIDQwNy45MDdWMzY0LjgyOEgzMzAuMTg5VjM4MC45MDNIMzQ4LjYzMlYzNjQuODI4SDM1OC4xMDRWNDA3LjkwN0gzNDguNjMyVjM4OS4yODJIMzMwLjE4OVY0MDcuOTA3SDMyMC42NzJaIiBmaWxsPSIjMTYxRDFFIi8+Cjwvc3ZnPgo=
+    </icon>
     <properties>
         <propertyGroup caption="General">
             <propertyGroup caption="General">
                 <property key="objectsDatasource" type="datasource" isList="true">
-                    <caption>Data source</caption>
+                    <caption>Data Source</caption>
                     <description>Define the data source for chart values.</description>
                 </property>
 
                 <property key="ChartType" type="enumeration" defaultValue="bar">
-                    <caption>Chart Type</caption>
-                    <description />
+                    <caption>Defult Chart Type</caption>
+                    <description>Specifies the default chart type to render (e.g., bar, line, pie).</description>
                     <enumerationValues>
                         <enumerationValue key="bar">Bar</enumerationValue>
                         <enumerationValue key="line">Line</enumerationValue>
@@ -37,7 +39,7 @@
 
                 <property key="XaxisData" type="attribute" dataSource="objectsDatasource">
                     <caption>X Axis</caption>
-                    <description>Define the key name in data objects to use for value</description>
+                    <description>Defines the attribute in the data source for X-axis values.</description>
                     <attributeTypes>
                         <attributeType name="Integer" />
                         <attributeType name="Decimal" />
@@ -45,7 +47,7 @@
                 </property>
                 <property key="YaxisData" type="attribute" dataSource="objectsDatasource">
                     <caption>Y Axis</caption>
-                    <description>Define the key name in data objects to use for value</description>
+                    <description>Defines the attribute in the data source for Y-axis values.</description>
                     <attributeTypes>
                         <attributeType name="Integer" />
                         <attributeType name="Decimal" />
@@ -53,7 +55,7 @@
                 </property>
                 <property key="bubbleRadius" type="expression" defaultValue="5" dataSource="objectsDatasource">
                     <caption>Bubble Chart Radius</caption>
-                    <description />
+                    <description>Expression defining the radius size for bubbles in a Bubble chart.</description>
                     <returnType assignableTo="XaxisData" />
                 </property>
 
@@ -68,7 +70,7 @@
                 </property>
                 <property key="labelKey" type="attribute" dataSource="objectsDatasource">
                     <caption>Label Key</caption>
-                    <description>Define the key name in data objects to use for label</description>
+                    <description>Defines the attribute for labels in the chart</description>
                     <attributeTypes>
                         <attributeType name="Integer" />
                         <attributeType name="Decimal" />
@@ -85,18 +87,105 @@
                         <translation lang="en_US" />
                     </translations>
                 </property>
-                <property key="hoverEffectColor" type="string" required="false">
-                    <caption>Hover Effect color</caption>
-                    <description>Color displayed when hovering over elements</description>
+            </propertyGroup>
+            <propertyGroup caption="Chart Type Selection">
+                <property key="IsSelection" type="boolean" defaultValue="false">
+                    <caption>Show Chart Selection</caption>
+                    <description>Enable or disable the display of the chart selection box.</description>
+                </property>
+                <property key="SelectionBoxLable" type="string" required="false">
+                    <caption>Selection Box Label</caption>
+                    <description>The title displayed above the treemap chart.</description>
                 </property>
             </propertyGroup>
-            <propertyGroup caption="Chart labels">
-                <property key="IsLabels" type="boolean" defaultValue="false">
-                    <caption>Show Labels</caption>
-                    <description>Enable or disable the display of the labels.</description>
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <property key="chartOnClickAction" type="action" required="false" dataSource="objectsDatasource">
+                <caption>onclick Action</caption>
+                <description>Action triggered when a chart element is clicked.</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Style">
+            <propertyGroup caption="Chart Height And Width">
+                <property key="Width" type="integer" defaultValue="900">
+                    <caption>Width</caption>
+                    <description>Enable or disable the display of the chart selection box.</description>
+                </property>
+                <property key="Height" type="integer" defaultValue="600">
+                    <caption>Height</caption>
+                    <description>The title displayed above the treemap chart.</description>
+                </property>
+            </propertyGroup>
+
+            <propertyGroup caption="Other Style">
+                <property key="hoverEffectColor" type="string" required="false">
+                    <caption>Hover Effect Color</caption>
+                    <description>Color displayed when hovering over elements</description>
+                </property>
+                <property key="BorderWidth" type="integer" defaultValue="1">
+                    <caption>Chart Border Width</caption>
+                    <description />
+                </property>
+                <property key="borderColor" type="string" required="false">
+                    <caption>Border Color</caption>
+                    <description />
+                </property>
+            </propertyGroup>
+
+            <propertyGroup caption="Chart Title">
+                <property key="IsTitle" type="boolean" defaultValue="false">
+                    <caption>Show Chart Title</caption>
+                    <description>Enable or disable the display of the chart title.</description>
+                </property>
+                <property key="chartTitle" type="string" required="false">
+                    <caption>Chart Title</caption>
+                    <description>The title displayed above the treemap chart.</description>
+                </property>
+                <property key="fontColor" type="string" required="false">
+                    <caption>Font Color</caption>
+                    <description>Set the font color for the chart title (e.g., '#000000' for black).</description>
+                </property>
+                <property key="fontFamily" type="string" required="false">
+                    <caption>Font Family</caption>
+                    <description>Set the font family for the chart title (e.g., Arial, Times New Roman).</description>
+                </property>
+                <property key="fontSize" type="decimal" defaultValue='12'>
+                    <caption>Font Size</caption>
+                    <description>Define the font size for the chart title in pixels.</description>
+                </property>
+                <property key="fontStyle" type="string" required="false">
+                    <caption>Font Style</caption>
+                    <description>
+                        Choose the font style for the chart title (e.g., normal, italic, oblique, initial, inherit).
+                    </description>
+                </property>
+                <property key="fontWeight" type="decimal" defaultValue='100'>
+                    <caption>Font Weight</caption>
+                    <description>
+                        Set the font weight for the chart title (e.g., 100 for light, 400 for normal, 700 for lighter,
+                        900 for bolder).
+                    </description>
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="X And Y Axis Labels">
+                <property key="XaxisLineColor" type="string" required="false">
+                    <caption>X Axis Line Color</caption>
+                    <description />
+                </property>
+                <property key="YaxisLineColor" type="string" required="false">
+                    <caption>Y Axis Line Color</caption>
+                    <description />
+                </property>
+                <property key="XaxisBorderWidth" type="decimal" defaultValue='1'>
+                    <caption>X Axis Border Width</caption>
+                    <description />
+                </property>
+                <property key="YaxisBorderWidth" type="decimal" defaultValue='1'>
+                    <caption>Y Axis Border Width</caption>
+                    <description />
                 </property>
                 <property key="labelsFontColor" type="string" required="false">
-                    <caption>Font color</caption>
+                    <caption>Font Color</caption>
                     <description>Set the font color for the labels (e.g., '#000000' for black).</description>
                 </property>
                 <property key="labelsFontFamily" type="string" required="false">
@@ -122,47 +211,16 @@
                 </property>
             </propertyGroup>
 
-            <propertyGroup caption="Chart Title">
-                <property key="IsTitle" type="boolean" defaultValue="false">
-                    <caption>Show Chart Title</caption>
-                    <description>Enable or disable the display of the chart title.</description>
+            <propertyGroup caption="Line, Scatter And Bubble Chart Style">
+                <property key="pointBorderColor" type="string" required="false">
+                    <caption>Point Border Color</caption>
+                    <description />
                 </property>
-                <property key="chartTitle" type="string" required="false">
-                    <caption>Chart Title</caption>
-                    <description>The title displayed above the treemap chart.</description>
-                </property>
-                <property key="fontColor" type="string" required="false">
-                    <caption>Font color</caption>
-                    <description>Set the font color for the chart title (e.g., '#000000' for black).</description>
-                </property>
-                <property key="fontFamily" type="string" required="false">
-                    <caption>Font Family</caption>
-                    <description>Set the font family for the chart title (e.g., Arial, Times New Roman).</description>
-                </property>
-                <property key="fontSize" type="decimal" defaultValue='12'>
-                    <caption>Font Size</caption>
-                    <description>Define the font size for the chart title in pixels.</description>
-                </property>
-                <property key="fontStyle" type="string" required="false">
-                    <caption>Font Style</caption>
-                    <description>
-                        Choose the font style for the chart title (e.g., normal, italic, oblique, initial, inherit).
-                    </description>
-                </property>
-                <property key="fontWeight" type="decimal" defaultValue='100'>
-                    <caption>Font Weight</caption>
-                    <description>
-                        Set the font weight for the chart title (e.g., 100 for light, 400 for normal, 700 for lighter,
-                        900 for bolder).
-                    </description>
+                <property key="pointBackgroundColor" type="string" required="false">
+                    <caption>Point Background Color</caption>
+                    <description />
                 </property>
             </propertyGroup>
-        </propertyGroup>
-        <propertyGroup caption="Events">
-            <property key="chartOnClickAction" type="action" required="false" dataSource="objectsDatasource">
-                <caption>onclick Action</caption>
-                <description>Action triggered when a chart element is clicked.</description>
-            </property>
         </propertyGroup>
     </properties>
 </widget>
