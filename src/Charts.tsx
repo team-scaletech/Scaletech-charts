@@ -7,7 +7,7 @@ import DynamicChart from "./components/DynamicChart";
 export interface MapData {
     value: any;
     id: string;
-    dataKey: string;
+    dataKey: string | number;
     labelKey: string;
     XaxisData: number;
     YaxisData: number;
@@ -32,7 +32,10 @@ const Charts: FC<ChartsContainerProps> = ({
     fontSize,
     fontStyle,
     fontWeight,
-    IsLabels,
+    XaxisLineColor,
+    XaxisBorderWidth,
+    YaxisLineColor,
+    YaxisBorderWidth,
     labelsFontSize,
     labelsFontFamily,
     labelsFontWeight,
@@ -40,7 +43,15 @@ const Charts: FC<ChartsContainerProps> = ({
     labelsFontStyle,
     class: customClass,
     style,
-    chartOnClickAction
+    Height,
+    Width,
+    chartOnClickAction,
+    IsSelection,
+    SelectionBoxLable,
+    BorderWidth,
+    pointBackgroundColor,
+    pointBorderColor,
+    borderColor
 }) => {
     const [chartValue, setChartValue] = useState<MapData[]>([]);
     useEffect(() => {
@@ -52,7 +63,7 @@ const Charts: FC<ChartsContainerProps> = ({
                     labelKey: labelKey.get(item).displayValue,
                     XaxisData: XaxisData.get(item).displayValue,
                     YaxisData: YaxisData.get(item).displayValue,
-                    bubbleRadius: bubbleRadius.get(item).value,
+                    bubbleRadius: bubbleRadius?.get(item).value,
                     tollTip: myToolTip.get(item).value || ""
                 };
                 setChartValue(prevChartValue => [...prevChartValue, chartData] as any);
@@ -64,7 +75,6 @@ const Charts: FC<ChartsContainerProps> = ({
         <DynamicChart
             chartType={ChartType}
             chartValue={chartValue}
-            hoverEffectColor={hoverEffectColor}
             ChartTitleStyle={{
                 chartTitle,
                 IsTitle,
@@ -75,17 +85,30 @@ const Charts: FC<ChartsContainerProps> = ({
                 fontWeight: parseFloat(fontWeight as any)
             }}
             labelStyle={{
-                IsLabels,
                 labelsFontSize: parseFloat(labelsFontSize as any),
                 labelsFontFamily,
                 labelsFontWeight: parseFloat(labelsFontWeight as any),
                 labelsFontColor,
-                labelsFontStyle
+                labelsFontStyle,
+                XaxisLineColor,
+                XaxisBorderWidth: parseFloat(XaxisBorderWidth as any),
+                YaxisLineColor,
+                YaxisBorderWidth: parseFloat(YaxisBorderWidth as any)
             }}
-            className={customClass || ""}
-            style={style}
+            otherStyle={{
+                hoverEffectColor: hoverEffectColor,
+                BorderWidth: BorderWidth,
+                borderColor: borderColor
+            }}
+            LSBChartStyle={{
+                pointBackgroundColor: pointBackgroundColor,
+                pointBorderColor: pointBorderColor
+            }}
+            chartStyle={{ className: customClass, style: style, width: Width, height: Height }}
             chartOnClickAction={chartOnClickAction}
             objectsDatasource={objectsDatasource}
+            IsSelection={IsSelection}
+            SelectionBoxLable={SelectionBoxLable}
         />
     );
 };

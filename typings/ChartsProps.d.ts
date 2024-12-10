@@ -18,17 +18,15 @@ export interface ChartsContainerProps {
     ChartType: ChartTypeEnum;
     XaxisData: ListAttributeValue<Big>;
     YaxisData: ListAttributeValue<Big>;
-    bubbleRadius: ListExpressionValue<Big>;
+    bubbleRadius?: ListExpressionValue<Big>;
     dataKey: ListAttributeValue<Big | string>;
     labelKey: ListAttributeValue<Big | string>;
     myToolTip: ListExpressionValue<string>;
-    hoverEffectColor: string;
-    IsLabels: boolean;
-    labelsFontColor: string;
-    labelsFontFamily: string;
-    labelsFontSize: Big;
-    labelsFontStyle: string;
-    labelsFontWeight: Big;
+    IsSelection: boolean;
+    SelectionBoxLable: string;
+    chartOnClickAction?: ListActionValue;
+    Width: number;
+    Height: number;
     IsTitle: boolean;
     chartTitle: string;
     fontColor: string;
@@ -36,7 +34,20 @@ export interface ChartsContainerProps {
     fontSize: Big;
     fontStyle: string;
     fontWeight: Big;
-    chartOnClickAction?: ListActionValue;
+    XaxisLineColor: string;
+    YaxisLineColor: string;
+    XaxisBorderWidth: Big;
+    YaxisBorderWidth: Big;
+    labelsFontColor: string;
+    labelsFontFamily: string;
+    labelsFontSize: Big;
+    labelsFontStyle: string;
+    labelsFontWeight: Big;
+    pointBorderColor: string;
+    pointBackgroundColor: string;
+    hoverEffectColor: string;
+    BorderWidth: number;
+    borderColor: string;
 }
 
 export interface ChartsPreviewProps {
@@ -57,13 +68,11 @@ export interface ChartsPreviewProps {
     dataKey: string;
     labelKey: string;
     myToolTip: string;
-    hoverEffectColor: string;
-    IsLabels: boolean;
-    labelsFontColor: string;
-    labelsFontFamily: string;
-    labelsFontSize: number | null;
-    labelsFontStyle: string;
-    labelsFontWeight: number | null;
+    IsSelection: boolean;
+    SelectionBoxLable: string;
+    chartOnClickAction: {} | null;
+    Width: number | null;
+    Height: number | null;
     IsTitle: boolean;
     chartTitle: string;
     fontColor: string;
@@ -71,5 +80,18 @@ export interface ChartsPreviewProps {
     fontSize: number | null;
     fontStyle: string;
     fontWeight: number | null;
-    chartOnClickAction: {} | null;
+    XaxisLineColor: string;
+    YaxisLineColor: string;
+    XaxisBorderWidth: number | null;
+    YaxisBorderWidth: number | null;
+    labelsFontColor: string;
+    labelsFontFamily: string;
+    labelsFontSize: number | null;
+    labelsFontStyle: string;
+    labelsFontWeight: number | null;
+    pointBorderColor: string;
+    pointBackgroundColor: string;
+    hoverEffectColor: string;
+    BorderWidth: number | null;
+    borderColor: string;
 }
