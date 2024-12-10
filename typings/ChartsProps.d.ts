@@ -18,7 +18,7 @@ export interface ChartsContainerProps {
     ChartType: ChartTypeEnum;
     XaxisData: ListAttributeValue<Big>;
     YaxisData: ListAttributeValue<Big>;
-    bubbleRadius: ListExpressionValue<Big>;
+    bubbleRadius?: ListExpressionValue<Big>;
     dataKey: ListAttributeValue<Big | string>;
     labelKey: ListAttributeValue<Big | string>;
     myToolTip: ListExpressionValue<string>;
@@ -27,9 +27,6 @@ export interface ChartsContainerProps {
     chartOnClickAction?: ListActionValue;
     Width: number;
     Height: number;
-    hoverEffectColor: string;
-    BorderWidth: number;
-    borderColor: string;
     IsTitle: boolean;
     chartTitle: string;
     fontColor: string;
@@ -48,6 +45,9 @@ export interface ChartsContainerProps {
     labelsFontWeight: Big;
     pointBorderColor: string;
     pointBackgroundColor: string;
+    hoverEffectColor: string;
+    BorderWidth: number;
+    borderColor: string;
 }
 
 export interface ChartsPreviewProps {
@@ -73,9 +73,6 @@ export interface ChartsPreviewProps {
     chartOnClickAction: {} | null;
     Width: number | null;
     Height: number | null;
-    hoverEffectColor: string;
-    BorderWidth: number | null;
-    borderColor: string;
     IsTitle: boolean;
     chartTitle: string;
     fontColor: string;
@@ -94,4 +91,7 @@ export interface ChartsPreviewProps {
     labelsFontWeight: number | null;
     pointBorderColor: string;
     pointBackgroundColor: string;
+    hoverEffectColor: string;
+    BorderWidth: number | null;
+    borderColor: string;
 }

@@ -63,7 +63,7 @@ const Charts: FC<ChartsContainerProps> = ({
                     labelKey: labelKey.get(item).displayValue,
                     XaxisData: XaxisData.get(item).displayValue,
                     YaxisData: YaxisData.get(item).displayValue,
-                    bubbleRadius: bubbleRadius.get(item).value,
+                    bubbleRadius: bubbleRadius?.get(item).value,
                     tollTip: myToolTip.get(item).value || ""
                 };
                 setChartValue(prevChartValue => [...prevChartValue, chartData] as any);
