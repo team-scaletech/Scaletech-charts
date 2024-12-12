@@ -61,6 +61,7 @@ const DynamicChart: FC<ChartProps> = ({
                         y: item.YaxisData || 0,
                         r: currentChartType === "bubble" ? Number(item.bubbleRadius || 5) : undefined
                     })),
+                    dataId: data.map(item => item.id || 0),
                     backgroundColor: colors,
                     borderColor: otherStyle?.borderColor || colors[0],
                     borderWidth: otherStyle?.BorderWidth,
@@ -75,6 +76,7 @@ const DynamicChart: FC<ChartProps> = ({
             return [
                 {
                     data: data.map(item => item.dataKey || 0),
+                    dataId: data.map(item => item.id || 0),
                     borderColor: otherStyle?.borderColor || colors[0],
                     borderWidth: otherStyle?.BorderWidth,
                     tension: 0.4, // Curve for line chart
@@ -89,6 +91,7 @@ const DynamicChart: FC<ChartProps> = ({
         return [
             {
                 data: data.map(item => item.dataKey || 0),
+                dataId: data.map(item => item.id || 0),
                 backgroundColor: colors,
                 hoverBackgroundColor: Array(data.length).fill(otherStyle?.hoverEffectColor || "rgba(0, 0, 0, 0.2)"),
                 borderWidth: otherStyle?.BorderWidth,
@@ -185,13 +188,10 @@ const DynamicChart: FC<ChartProps> = ({
             const dataIndex = firstElement.index;
 
             // Access the clicked data point
-            const clickedData = chart.data.datasets[datasetIndex].data[dataIndex];
-
-            // Access the value within the clicked data
-            const clickedValue = clickedData._data; // Use '_data' or the property specific to your data
+            const clickedData = chart.data.datasets[datasetIndex].dataId[dataIndex];
 
             if (objectsDatasource && objectsDatasource.items && chartOnClickAction) {
-                const filteredData = objectsDatasource.items.filter(item => item.id === clickedValue.id);
+                const filteredData = objectsDatasource.items.filter(item => item.id === clickedData);
                 const actionOnFirstItem = chartOnClickAction.get(filteredData[0]);
                 actionOnFirstItem.execute();
                 // Execute the Mendix action if needed
