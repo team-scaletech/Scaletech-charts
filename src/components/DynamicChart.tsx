@@ -1,7 +1,7 @@
 import { createElement, FC, useEffect, useState } from "react";
 import { Chart as ChartJS, registerables } from "chart.js";
 import { Chart } from "react-chartjs-2";
-import { MapData } from "src/Charts";
+import { MapData } from "src/ScaletechCharts";
 import { ChartProps } from "src/interface/ChartInterface";
 import { colors, defaultChartTitleStyle, defaultLabelStyle, defaultLSBChartStyle } from "src/utils/constants";
 

@@ -1,7 +1,7 @@
 import { FC, createElement, useEffect, useState } from "react";
 import { ChartsContainerProps } from "../typings/ChartsProps";
 
-import "./ui/Charts.css";
+import "./ui/ScaletechCharts.css";
 import DynamicChart from "./components/DynamicChart";
 
 export interface MapData {

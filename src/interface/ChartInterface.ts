@@ -1,5 +1,5 @@
 import { CSSProperties } from "react";
-import { MapData } from "src/Charts";
+import { MapData } from "src/ScaletechCharts";
 import { ListActionValue, ListValue } from "mendix";
 
 export interface LabelStyleProps {

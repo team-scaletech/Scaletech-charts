@@ -1,6 +1,6 @@
 {
-    "name": "charts",
-    "widgetName": "Charts",
+    "name": "ScaletechCharts",
+    "widgetName": "ScaletechCharts",
     "version": "1.0.0",
     "description": "My widget description",
     "copyright": "© Mendix Technology BV 2022. All rights reserved.",
@@ -14,7 +14,7 @@
         "mendixHost": "http://localhost:8080",
         "developmentPort": 3000
     },
-    "packagePath": "scaletech",
+    "packagePath": "allchart",
     "scripts": {
         "start": "pluggable-widgets-tools start:server",
         "dev": "pluggable-widgets-tools start:web",

@@ -6,5 +6,5 @@ export function preview(): ReactElement {
 }
 
 export function getPreviewCss(): string {
-    return require("./ui/Charts.css");
+    return require("./ui/ScaletechCharts.css");
 }
